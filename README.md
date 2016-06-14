@@ -27,13 +27,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/bLorJJw.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/bLorJJw.gif' title='Video Walkthrough' width='' loop=infinite alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Everything had to be manually adjusted for the iPhone 6s screen. The GIF wouldn't loop at first.
 
 ## Credits
 

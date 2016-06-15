@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F2F3EA81D10C33F00E9987F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2F3EA71D10C33F00E9987F /* SettingsViewController.swift */; };
 		5FA22E471D10A6F40014E13D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA22E461D10A6F40014E13D /* AppDelegate.swift */; };
 		5FA22E491D10A6F40014E13D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA22E481D10A6F40014E13D /* ViewController.swift */; };
 		5FA22E4C1D10A6F40014E13D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA22E4A1D10A6F40014E13D /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F2F3EA71D10C33F00E9987F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5FA22E431D10A6F40014E13D /* Tipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA22E461D10A6F40014E13D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FA22E481D10A6F40014E13D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				5FA22E461D10A6F40014E13D /* AppDelegate.swift */,
 				5FA22E481D10A6F40014E13D /* ViewController.swift */,
 				5FA22E4A1D10A6F40014E13D /* Main.storyboard */,
+				5F2F3EA71D10C33F00E9987F /* SettingsViewController.swift */,
 				5FA22E4D1D10A6F40014E13D /* Assets.xcassets */,
 				5FA22E4F1D10A6F40014E13D /* LaunchScreen.storyboard */,
 				5FA22E521D10A6F40014E13D /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				5FA22E491D10A6F40014E13D /* ViewController.swift in Sources */,
 				5FA22E471D10A6F40014E13D /* AppDelegate.swift in Sources */,
+				5F2F3EA81D10C33F00E9987F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

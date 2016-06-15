@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="oHf-EU-1Za">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="mzf-Fg-Z4R">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -8,7 +8,7 @@
         <!--Tip Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tipper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="0" id="BYZ-38-t0r" customClass="ViewController" customModule="Tipper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,7 +81,15 @@
                             <outletCollection property="gestureRecognizers" destination="IM3-W8-qeK" appends="YES" id="bh6-Ms-l1S"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tip Calculator" id="z02-ss-Uun"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="z02-ss-Uun">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="Rsb-9j-D09">
+                            <connections>
+                                <segue destination="yqc-Ru-pw1" kind="push" id="dRe-Zy-FZh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="billField" destination="5dx-Om-J8T" id="GRi-mb-qER"/>
@@ -97,25 +105,65 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="740" y="67"/>
+            <point key="canvasLocation" x="1000" y="-117"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="Kop-bB-z52">
+            <objects>
+                <viewController id="yqc-Ru-pw1" customClass="SettingsViewController" customModule="Tipper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1YR-Zf-y5g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Tip Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hOn-4H-1B7">
+                                <rect key="frame" x="20" y="105" width="176" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="oXC-MY-LV5">
+                                <rect key="frame" x="35" y="134" width="278" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                    <segment title="25%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="setDefaultTip:" destination="yqc-Ru-pw1" eventType="valueChanged" id="qWF-sN-y2A"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Aa-5W-4TI"/>
+                    <connections>
+                        <outlet property="defaultTipControl" destination="oXC-MY-LV5" id="HVs-aD-Vil"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IOi-2H-uEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1435" y="-117"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="cF6-fu-0MU">
+        <scene sceneID="XEY-Uk-eoY">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oHf-EU-1Za" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mzf-Fg-Z4R" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QQM-br-kfF">
+                    <navigationItem key="navigationItem" id="hdH-Je-ums"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Axf-p8-ILG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1o5-7L-Mkz"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oks-IL-2rP"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hP7-xm-yfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KPd-sM-sy7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336" y="73"/>
+            <point key="canvasLocation" x="554" y="-323"/>
         </scene>
     </scenes>
 </document>
